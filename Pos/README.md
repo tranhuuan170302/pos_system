@@ -35,8 +35,8 @@ This is the backend for a Point of Sale (POS) system developed using Node.js. It
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/pos-backend.git
-   cd pos-backend
+   git clone https://github.com/yourusername/pos_system.git
+   cd pos_system
    ```
 
 2. **Install dependencies:**
@@ -50,7 +50,7 @@ This is the backend for a Point of Sale (POS) system developed using Node.js. It
    Copy the sample environment file:
 
    ```bash
-   cp .env.example .env
+   cp .env
    ```
 
    Update `.env` with your configuration values (e.g., database connection details, API keys).
@@ -75,11 +75,13 @@ Configuration settings are stored in the `.env` file. Key settings include:
 
 ### API Endpoints
 
-- `GET /api/products` - List all products
-- `POST /api/products` - Create a new product
-- `GET /api/products/:id` - Get details of a product
-- `PUT /api/products/:id` - Update a product
-- `DELETE /api/products/:id` - Delete a product
+- `POST /v1/user/login` - login user
+- `POST /v1/user/signup` - register user
+- `GET /v1/user/profile/:id` - view profile user
+- `PUT /v1/user/upated/:id` - Update a profile user
+- `POST /v1/category/categoryNew` - add a Category
+- `DEL /v1/category/categoryRemove` - Delete a Category
+- ...
 
 Refer to the [API Documentation](#api-documentation) for detailed information.
 
